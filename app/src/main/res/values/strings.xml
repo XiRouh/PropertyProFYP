@@ -1,0 +1,198 @@
+<resources>
+    <string name="app_name">PropertyPro-FYP</string>
+
+    <!-- main -->
+    <string name="emailTextView">EMAIL</string>
+    <string name="usernameTextView">USERNAME</string>
+    <string name="userTypeTextView">ROLE</string>
+    <string name="passwordTextView">PASSWORD</string>
+    <string name="confirmPasswordTextView">CONFIRM PASSWORD</string>
+    <string name="signUpTextView">SIGN UP</string>
+    <string name="alreadyRegistered"> Already Register. Login </string>
+
+    <!-- login -->
+    <string name="loginTextView">LOGIN</string>
+    <string name="notYetRegister"> Not Yet Register. Sign Up </string>
+    <string name="forgotPassword">Forgot Password? </string>
+
+    <!-- forgot password -->
+    <string name="forgotPassBtn">RESET PASSWORD</string>
+
+    <!--    user profile-->
+    <string name="rateExperienceBtn">Rate Your Experience</string>
+    <string name="deleteProfileBt">Deactivate</string>
+    <string name="logoutBtn">Logout</string>
+
+    <!--    editprofile-->
+    <string name="editUsername">FULL NAME</string>
+    <string name="editEmail">EMAIL </string>
+    <string name="editPassword">PASSWORD</string>
+
+    <string name="no_records_found">No records found</string>
+    <string name="search_by_user_type">Search by User Type...</string>
+    <string name="search_by_status">Search by Status...</string>
+    <string name="approve">Approve</string>
+    <string name="reject">Reject</string>
+    <string name="status">STATUS:</string>
+    <string name="request_item">REQUEST ITEM:</string>
+    <string name="recipient_name">RECIPIENT NAME:</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="username">USERNAME:</string>
+    <string name="email">EMAIL:</string>
+    <string name="uses_type">USER TYPE:</string>
+    <string name="profile_picture1">Profile Picture</string>
+    <string name="profile_picture2">Profile Picture</string>
+    <string name="edit_profile_picture">Edit Profile Picture</string>
+    <string name="profile_picture3">Profile Picture</string>
+    <string name="save">SAVE</string>
+    <string name="back_to_home">BACK TO HOME</string>
+    <string name="type_your_email">Type your email</string>
+    <string name="type_your_password">Type your password</string>
+
+    <!--    Add Property    -->
+    <string name="property_type_prompt">Select Property Type</string>
+    <string name="tenure_prompt">Select Tenure</string>
+    <string name="location_hint">Enter Location</string>
+    <string name="build_up_hint">Enter Build Up</string>
+    <string name="price_hint">Enter Price</string>
+    <string name="description_hint">Enter Description</string>
+    <string name="project_name_hint">Enter Project Name</string>
+    <string name="developer_hint">Enter Developer</string>
+    <string name="completion_date_hint">Enter Completion Date</string>
+    <string name="maintenance_fee_hint">Enter Maintenance Fee</string>
+    <string name="package_hint">Enter Package</string>
+    <string name="propertyTypeHeader">Select Property Type</string>
+    <string name="tenureHeader">Select Tenure Type</string>
+    <string name="locationHeader">Enter Location</string>
+    <string name="buildUpHeader">Enter Build Up</string>
+    <string name="priceHeader">Enter Price</string>
+    <string name="descriptionHeader">Enter Description</string>
+    <string name="projectNameHeader">Enter Project Name</string>
+    <string name="developerHeader">Enter Developer</string>
+    <string name="completionDateHeader">Enter Completion Date</string>
+    <string name="maintenanceFeeHeader">Enter Maintenance Fee</string>
+    <string name="packageHeader">Enter Packages</string>
+    <string name="property_images_title">Please upload property images (Maximum 30 images)</string>
+    <string name="property_videos_title">Please upload property videos (Maximum 3 videos)</string>
+    <string name="related_documents_title">Please upload related document (Maximum 100 documents)</string>
+
+    <!--    View Property   -->
+    <string name="property_type">Property Type</string>
+    <string name="tenure">Tenure</string>
+    <string name="location">Location</string>
+    <string name="build_up">Build Up</string>
+    <string name="price">Price</string>
+    <string name="description">Description</string>
+    <string name="project_name">Project Name</string>
+    <string name="developer">Developer</string>
+    <string name="completion_date">Completion Date</string>
+    <string name="maintenance_fee">Maintenance Fee</string>
+    <string name="packages">Package</string>
+
+    <!--   DSR   -->
+    <string name="netIncome">Enter Monthly Net Income (RM) (After EPF/SOCSO/TAX)</string>
+    <string name="homeFinancing">Enter Home Financing Payment (RM)</string>
+    <string name="carFinancing">Enter Car Financing Payment (RM)</string>
+    <string name="creditCard">Enter Credit Card Payment (RM)</string>
+    <string name="personalFinancing">Enter Personal Financing Payment (RM)</string>
+    <string name="educationLoan">Enter PTPTN/Education Loan Payment (RM)</string>
+    <string name="otherLoan">Enter Other Loan (RM)</string>
+
+    <string-array name="userType">
+        <item>Staff</item>
+        <item>User</item>
+    </string-array>
+
+    <string-array name="propertyType">
+        <item>Terrace House</item>
+        <item>Semi-Detached House</item>
+        <item>Detached House</item>
+        <item>Apartment</item>
+        <item>Condominium</item>
+        <item>Townhouse</item>
+        <item>Bungalow</item>
+        <item>Flat</item>
+        <item>Duplex</item>
+        <item>Studio Apartment</item>
+    </string-array>
+
+    <string-array name="tenureType">
+        <item>Freehold</item>
+        <item>Leasehold</item>
+    </string-array>
+
+    <string-array name="areaType">
+        <!-- Kuala Lumpur -->
+        <item>Bangsar, Kuala Lumpur</item>
+        <item>Cheras, Kuala Lumpur</item>
+        <item>Brickfields, Kuala Lumpur</item>
+        <item>Damansara, Kuala Lumpur</item>
+        <item>Mont Kiara, Kuala Lumpur</item>
+        <item>Sri Hartamas, Kuala Lumpur</item>
+        <item>Bukit Bintang, Kuala Lumpur</item>
+        <item>Setapak, Kuala Lumpur</item>
+        <item>Kepong, Kuala Lumpur</item>
+        <item>Wangsa Maju, Kuala Lumpur</item>
+        <item>KLCC, Kuala Lumpur</item>
+        <item>Titiwangsa, Kuala Lumpur</item>
+        <item>Seputeh, Kuala Lumpur</item>
+        <item>Old Klang Road, Kuala Lumpur</item>
+        <item>Sentul, Kuala Lumpur</item>
+        <item>Pantai, Kuala Lumpur</item>
+        <item>Kuchai Lama, Kuala Lumpur</item>
+        <item>Desa ParkCity, Kuala Lumpur</item>
+        <item>Setiawangsa, Kuala Lumpur</item>
+        <item>Wangsa Melawati, Kuala Lumpur</item>
+
+        <item>Penang</item>
+        <item>Ipoh, Perak</item>
+        <item>Johor Bahru, Johor</item>
+        <item>Kuching, Sarawak</item>
+        <item>Kota Kinabalu, Sabah</item>
+        <item>Langkawi, Kedah</item>
+        <item>Melaka</item>
+        <item>Kuantan, Pahang</item>
+        <item>Kuala Terengganu, Terengganu</item>
+        <item>Alor Setar, Kedah</item>
+        <item>Bintulu, Sarawak</item>
+        <item>Miri, Sarawak</item>
+        <item>Butterworth, Penang</item>
+        <item>Sibu, Sarawak</item>
+        <item>Sandakan, Sabah</item>
+        <item>Labuan</item>
+        <item>Kuala Kangsar, Perak</item>
+        <item>Port Dickson, Negeri Sembilan</item>
+        <item>Taiping, Perak</item>
+        <item>Kluang, Johor</item>
+    </string-array>
+
+    <string-array name="report_types">
+        <item>Purchase Intention</item>
+        <item>Property Type</item>
+        <item>Area</item>
+    </string-array>
+
+    <string-array name="booking_status_options">
+        <item>All</item>
+        <item>Pending</item>
+        <item>Done - With Purchase Intention</item>
+        <item>Done - Without Purchase Intention</item>
+    </string-array>
+
+    <string-array name="session">
+        <item>Morning Session: 8AM - 11AM</item>
+        <item>Morning Session: 9AM - 11AM</item>
+        <item>Morning Session: 10AM - 11AM</item>
+        <item>Afternoon Session: 2PM - 5PM</item>
+        <item>Afternoon Session: 3PM - 5PM</item>
+        <item>Afternoon Session: 4PM - 5PM</item>
+    </string-array>
+
+    <string-array name="time_range_options">
+        <item>All Time</item>
+        <item>This Week</item>
+        <item>This Month</item>
+        <item>This Year</item>
+        <item>More than This Year</item>
+    </string-array>
+</resources>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PropertyProFYP"
+        tools:targetApi="31">
+
+        <service android:name=".FirebaseService"
+            android:permission="com.google.android.c2dm.permission.SEND"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="Login" />
+        <activity
+            android:name=".SignUpActivity"
+            android:label="Sign Up" />
+
+        <activity
+            android:name=".UserProfileActivity"
+            android:label="Sign Up" />
+
+        <activity
+            android:name=".AddPropertyDetailsActivity"
+            android:label="Add Property Details" />
+
+        <activity
+            android:name=".AddPropertyMediaActivity"
+            android:label="Add Property Media" />
+
+        <activity
+            android:name=".ViewPropertyActivity"
+            android:label="View Property" />
+
+        <activity
+            android:name=".UserPropertyDetailsActivity"
+            android:label="User View Property Details" />
+
+        <activity
+            android:name=".StaffPropertyDetailsActivity"
+            android:label="Staff View Property Details" />
+
+        <activity
+            android:name=".EditPropertyDetailsActivity"
+            android:label="Edit Property Details" />
+
+        <activity
+            android:name=".EditPropertyDocumentActivity"
+            android:label="Edit Property Documents" />
+
+        <activity
+            android:name=".EditPropertyImageActivity"
+            android:label="Edit Property Image" />
+
+        <activity
+            android:name=".EditPropertyVideoActivity"
+            android:label="Edit Property Video" />
+
+        <activity
+            android:name=".VideoPlayerActivity"
+            android:label="Play Video" />
+
+        <activity
+            android:name=".MakeAppointmentActivity"
+            android:label="Make Appointment" />
+
+        <activity
+            android:name=".ViewAppointmentActivity"
+            android:label="View Appointment" />
+
+        <activity
+            android:name=".ViewPurchasesActivity"
+            android:label="View Purchases" />
+
+        <activity
+            android:name=".CalculateDSRActivity"
+            android:label="Calculate DSR" />
+
+        <activity
+            android:name=".EditBookingActivity"
+            android:label="Edit Appointment" />
+
+        <activity
+            android:name=".SendAnnouncementActivity"
+            android:label="Send Announcement" />
+
+        <activity
+            android:name=".ViewNotificationActivity"
+            android:label="View Announcement" />
+
+        <activity
+            android:name=".ViewNotificationDetailsActivity"
+            android:label="View Announcement Details" />
+
+        <activity
+            android:name=".ViewWishlistActivity"
+            android:label="View Wishlist Details" />
+
+        <activity
+            android:name=".GenerateReportActivity"
+            android:label="View Wishlist Details" />
+
+        <activity
+            android:name=".ViewStaffActivity"
+            android:label="View Staff" />
+
+        <activity
+            android:name=".UpdatePermissionActivity"
+            android:label="Update Staff Permission" />
+
+        <activity
+            android:name=".StaffDashboardActivity"
+            android:label="Staff Dashboard" />
+
+        <activity
+            android:name=".SearchBotActivity"
+            android:label="SearchBot" />
+
+        <receiver android:name=".AppointmentReminderReceiver" />
+
+    </application>
+
+</manifest>

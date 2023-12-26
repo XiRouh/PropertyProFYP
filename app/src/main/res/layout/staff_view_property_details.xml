@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="667dp"
+        android:background="@color/main_blue"
+        app:navigationIcon="@drawable/arrow_back_icon"
+        app:title="Property Details">
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="63sp"
+            android:background="?android:attr/listDivider" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/propertyMediaViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            android:layout_below="@id/divider2" />
+
+        <LinearLayout
+            android:id="@+id/indicatorsContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/propertyMediaViewPager"
+            android:orientation="horizontal" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="?android:attr/listDivider" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottomButton"
+            android:layout_below="@+id/toolbar"
+            android:paddingTop="5dp" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:orientation="vertical" >
+
+                <!-- Property Type -->
+                <TextView
+                    android:id="@+id/propertyTypeTitle"
+                    style="@style/questionHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/property_type" />
+
+                <TextView
+                    android:id="@+id/propertyType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3sp"
+                    android:layout_marginBottom="7sp"
+                    android:text="TextView"
+                    android:textSize="17sp" />
+
+                <View
+                    android:id="@+id/divider3"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginBottom="7sp"
+                    android:background="?android:attr/listDivider" />
+
+                <!-- Tenure -->
+                <TextView
+                    android:id="@+id/tenureTitle"
+                    style="@style/questionHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tenure" />
+
+                <TextView
+                    android:id="@+id/tenureType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3sp"
+                    android:layout_marginBottom="7sp"
+                    android:text="TextView"
+                    android:textSize="17sp" />
+
+                <View
+                    android:id="@+id/divider4"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginBottom="7sp"
+                    android:background="?android:attr/listDivider" />
+
+                <!-- Area -->
+                <TextView
+                    android:id="@+id/areaTitle"
+                    style="@style/questionHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Area" />
+
+                <TextView
+                    android:id="@+id/areaType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3sp"
+                    android:layout_marginBottom="7sp"
+                    android:text="TextView"
+                    android:textSize="17sp" />
+
+                <View
+                    android:id="@+id/divider17"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginBottom="7sp"
+                    android:background="?android:attr/listDivider" />
+
+                <!-- Location -->
+                <TextView
+                    android:id="@+id/locationTitle"
+                    style="@style/questionHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/location" />
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3sp"
+                    android:layout_marginBottom="7sp"
+                    android:text="TextView"
+                    android:textSize="17sp" />
+
+                <View
+                    android:id="@+id/divider5"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginBottom="7sp"
+                    android:background="?android:attr/listDivider" />
+
+                <!-- Build Up -->
+                <TextView
+                    android:id="@+id/buildUpTitle"
+                    style="@style/questionHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/build_up" />
+
+                <TextView
+                    android:id="@+id/buildUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3sp"
+                    android:layout_marginBottom="7sp"
+                    android:text="TextView"
+                    android:textSize="17sp" />
+
+                <View
+                    android:id="@+id/divider6"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginBottom="7sp"
+                    android:background="?android:attr/listDivider" />
+
+                <!-- Price -->
+                <TextView
+                    android:id="@+id/priceTitle"
+                    style="@style/questionHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3sp"
+                    android:layout_marginBottom="7sp"
+                    android:text="TextView"
+                    android:textSize="17sp" />
+
+                <View
+                    android:id="@+id/divider7"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginBottom="7sp"
+                    android:background="?android:attr/listDivider" />
+
+                <!-- Description -->
+                <TextView
+                    android:id="@+id/descriptionTitle"
+                    style="@style/questionHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description" />
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3sp"
+                    android:layout_marginBottom="7sp"
+                    android:text="TextView"
+                    android:textSize="17sp" />
+
+                <View
+                    android:id="@+id/divider8"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginBottom="7sp"
+                    android:background="?android:attr/listDivider" />
+
+                <!-- Project Name -->
+                <TextView
+                    android:id="@+id/projectNameTitle"
+                    style="@style/questionHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/project_name" />
+
+                <TextView
+                    android:id="@+id/projectName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3sp"
+                    android:layout_marginBottom="7sp"
+                    android:text="TextView"
+                    android:textSize="17sp" />
+
+                <View
+                    android:id="@+id/divider9"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginBottom="7sp"
+                    android:background="?android:attr/listDivider" />
+
+                <!-- Developer -->
+                <TextView
+                    android:id="@+id/developerTitle"
+                    style="@style/questionHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/developer" />
+
+                <TextView
+                    android:id="@+id/developer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3sp"
+                    android:layout_marginBottom="7sp"
+                    android:text="TextView"
+                    android:textSize="17sp" />
+
+                <View
+                    android:id="@+id/divider10"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginBottom="7sp"
+                    android:background="?android:attr/listDivider" />
+
+                <!-- Completion Date -->
+                <TextView
+                    android:id="@+id/completionDateTitle"
+                    style="@style/questionHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/completion_date" />
+
+                <TextView
+                    android:id="@+id/completionDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3sp"
+                    android:layout_marginBottom="7sp"
+                    android:text="TextView"
+                    android:textSize="17sp" />
+
+                <View
+                    android:id="@+id/divider11"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginBottom="7sp"
+                    android:background="?android:attr/listDivider" />
+
+                <!-- Maintenance Fee -->
+                <TextView
+                    android:id="@+id/maintenanceFeeTitle"
+                    style="@style/questionHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/maintenance_fee" />
+
+                <TextView
+                    android:id="@+id/maintenanceFee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3sp"
+                    android:layout_marginBottom="7sp"
+                    android:text="TextView"
+                    android:textSize="17sp" />
+
+                <View
+                    android:id="@+id/divider12"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginBottom="7sp"
+                    android:background="?android:attr/listDivider" />
+
+                <!-- Package -->
+                <TextView
+                    android:id="@+id/packageTitle"
+                    style="@style/questionHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/packages" />
+
+                <TextView
+                    android:id="@+id/packages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3sp"
+                    android:layout_marginBottom="7sp"
+                    android:text="TextView"
+                    android:textSize="17sp" />
+
+                <View
+                    android:id="@+id/divider13"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginBottom="7sp"
+                    android:background="?android:attr/listDivider" />
+
+                <!-- TextView to act as a bar for videos -->
+                <TextView
+                    android:id="@+id/videosBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center_vertical"
+                    android:paddingStart="16dp"
+                    android:text="View Videos"
+                    android:textSize="18sp"
+                    android:textColor="@color/black" />
+
+                <!-- TextView to act as a bar for documents -->
+                <TextView
+                    android:id="@+id/documentBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center_vertical"
+                    android:paddingStart="16dp"
+                    android:text="View Documents"
+                    android:textSize="18sp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!-- Button at the Bottom -->
+    <Button
+        android:id="@+id/editBtn"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/deleteIcon"
+        android:text="Edit" />
+
+    <!-- Love Icon at the Bottom Right -->
+    <ImageView
+        android:id="@+id/deleteIcon"
+        android:layout_width="40dp"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_delete"/>
+</RelativeLayout>

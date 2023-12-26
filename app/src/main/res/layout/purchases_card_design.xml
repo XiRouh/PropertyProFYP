@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/homeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/bookingIdHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Purchases ID: " />
+
+            <TextView
+                android:id="@+id/bookingId"
+                style="@style/reviewCardView"
+                android:layout_marginLeft="5dp"
+                android:text="Booking ID" />
+
+            <TextView
+                android:id="@+id/userNameHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username:  " />
+
+            <TextView
+                android:id="@+id/userName"
+                style="@style/reviewCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Username:  " />
+
+            <TextView
+                android:id="@+id/staffNameHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Responsible Staff:  " />
+
+            <TextView
+                android:id="@+id/staffName"
+                style="@style/reviewCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Responsible Staff:  " />
+
+            <TextView
+                android:id="@+id/projectIdHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ProjectID: " />
+
+            <TextView
+                android:id="@+id/projectId"
+                style="@style/reviewCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="ProjectID: " />
+
+            <TextView
+                android:id="@+id/bookingProjectNameHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Project Name:  " />
+
+            <TextView
+                android:id="@+id/bookingProjectName"
+                style="@style/reviewCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="ProjectName:  " />
+
+            <TextView
+                android:id="@+id/priceHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Project Price:  " />
+
+            <TextView
+                android:id="@+id/price"
+                style="@style/reviewCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Project Price:  " />
+
+            <TextView
+                android:id="@+id/expectedCommissionHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Expected Commission (RM): " />
+
+            <TextView
+                android:id="@+id/expectedCommission"
+                style="@style/reviewCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Expected Commission: " />
+
+            <TextView
+                android:id="@+id/loanDSRHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Loan Debt Service Ratio (DSR): " />
+
+            <TextView
+                android:id="@+id/loanDSR"
+                style="@style/reviewCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/updateStatus"
+                android:layout_marginLeft="5dp"
+                android:text="Loan Debt Service Ratio (DSR): " />
+
+            <!-- Button Container -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/calculateLoanDSRBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/darkblue"
+                    android:text="Calculate Loan DSR"
+                    android:visibility="visible"
+                    tools:visibility="visible" />
+
+                <Button
+                    android:id="@+id/cancelBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/darkblue"
+                    android:text="Cancel Purchases"
+                    android:visibility="visible"
+                    tools:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

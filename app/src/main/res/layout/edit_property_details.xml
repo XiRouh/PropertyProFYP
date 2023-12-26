@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayout">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/main_blue"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:navigationIcon="@drawable/arrow_left"
+        app:navigationIconTint="@null"
+        app:title="Edit Property"
+        app:titleTextColor="@android:color/black" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:orientation="vertical" >
+
+            <!-- Property Type Dropdown -->
+            <TextView
+                android:id="@+id/propertyTypeTitle"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current Property Type"
+                android:textColor="@color/design_default_color_error" />
+
+            <TextView
+                android:id="@+id/propertyType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3sp"
+                android:layout_marginBottom="7sp"
+                android:text="TextView"
+                android:textSize="17sp"
+                android:textColor="@color/design_default_color_error"/>
+
+            <TextView
+                android:id="@+id/propertyTypeHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/propertyTypeHeader" />
+
+            <Spinner
+                android:id="@+id/spinnerPropertyType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/propertyType"
+                android:prompt="@string/property_type_prompt"
+                android:padding="12dp"/>
+
+            <!-- Tenure Dropdown -->
+            <TextView
+                android:id="@+id/tenureTitle"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current Tenure Type"
+                android:textColor="@color/design_default_color_error" />
+
+            <TextView
+                android:id="@+id/tenureType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3sp"
+                android:layout_marginBottom="7sp"
+                android:text="TextView"
+                android:textSize="17sp"
+                android:textColor="@color/design_default_color_error" />
+
+            <TextView
+                android:id="@+id/tenureHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tenureHeader" />
+
+            <Spinner
+                android:id="@+id/spinnerTenure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/tenureType"
+                android:prompt="@string/tenure_prompt"
+                android:padding="12dp"/>
+
+            <!-- Area Dropdown -->
+            <TextView
+                android:id="@+id/areaTitle"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current Area"
+                android:textColor="@color/design_default_color_error" />
+
+            <TextView
+                android:id="@+id/areaType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3sp"
+                android:layout_marginBottom="7sp"
+                android:text="TextView"
+                android:textSize="17sp"
+                android:textColor="@color/design_default_color_error" />
+
+            <TextView
+                android:id="@+id/areaHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Area" />
+
+            <Spinner
+                android:id="@+id/spinnerArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/areaType"
+                android:padding="12dp" />
+
+            <!-- Location Field -->
+            <TextView
+                android:id="@+id/locationTitle"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current Location"
+                android:textColor="@color/design_default_color_error" />
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3sp"
+                android:layout_marginBottom="7sp"
+                android:text="TextView"
+                android:textSize="17sp"
+                android:textColor="@color/design_default_color_error" />
+
+            <TextView
+                android:id="@+id/locationHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/locationHeader" />
+
+            <EditText
+                android:id="@+id/editTextLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:hint="@string/location_hint" />
+
+            <!-- Build UP Field -->
+            <TextView
+                android:id="@+id/buildUpTitle"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current Build Up"
+                android:textColor="@color/design_default_color_error" />
+
+            <TextView
+                android:id="@+id/buildUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3sp"
+                android:layout_marginBottom="7sp"
+                android:text="TextView"
+                android:textSize="17sp"
+                android:textColor="@color/design_default_color_error" />
+
+            <TextView
+                android:id="@+id/buildUpHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/buildUpHeader" />
+
+            <EditText
+                android:id="@+id/editTextBuildUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/build_up_hint"
+                android:inputType="numberDecimal" />
+
+            <!-- Price Field -->
+            <TextView
+                android:id="@+id/priceTitle"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current Price"
+                android:textColor="@color/design_default_color_error" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3sp"
+                android:layout_marginBottom="7sp"
+                android:text="TextView"
+                android:textSize="17sp"
+                android:textColor="@color/design_default_color_error" />
+
+            <TextView
+                android:id="@+id/priceHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/priceHeader" />
+
+            <EditText
+                android:id="@+id/editTextPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/price_hint"
+                android:inputType="numberDecimal" />
+
+            <!-- Description Field -->
+            <TextView
+                android:id="@+id/descriptionTitle"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current Description"
+                android:textColor="@color/design_default_color_error" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3sp"
+                android:layout_marginBottom="7sp"
+                android:text="TextView"
+                android:textSize="17sp"
+                android:textColor="@color/design_default_color_error" />
+
+            <TextView
+                android:id="@+id/descriptionHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/descriptionHeader" />
+
+            <EditText
+                android:id="@+id/editTextDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/description_hint"
+                android:inputType="textMultiLine"
+                android:minLines="4"
+                android:maxLines="6" />
+
+            <!-- Project Name Field -->
+            <TextView
+                android:id="@+id/projectNameTitle"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current Project Name"
+                android:textColor="@color/design_default_color_error" />
+
+            <TextView
+                android:id="@+id/projectName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3sp"
+                android:layout_marginBottom="7sp"
+                android:text="TextView"
+                android:textSize="17sp"
+                android:textColor="@color/design_default_color_error" />
+
+            <TextView
+                android:id="@+id/projectNameHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/projectNameHeader" />
+
+            <EditText
+                android:id="@+id/editTextProjectName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/project_name_hint" />
+
+            <!-- Developer Field -->
+            <TextView
+                android:id="@+id/developerTitle"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current Developer"
+                android:textColor="@color/design_default_color_error" />
+
+            <TextView
+                android:id="@+id/developer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3sp"
+                android:layout_marginBottom="7sp"
+                android:text="TextView"
+                android:textSize="17sp"
+                android:textColor="@color/design_default_color_error" />
+
+            <TextView
+                android:id="@+id/developerHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/developerHeader" />
+
+            <EditText
+                android:id="@+id/editTextDeveloper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/developer_hint" />
+
+            <!-- Completion Date Field -->
+            <TextView
+                android:id="@+id/completionDateTitle"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current Completion Date"
+                android:textColor="@color/design_default_color_error" />
+
+            <TextView
+                android:id="@+id/completionDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3sp"
+                android:layout_marginBottom="7sp"
+                android:text="TextView"
+                android:textSize="17sp"
+                android:textColor="@color/design_default_color_error" />
+
+            <TextView
+                android:id="@+id/completionDateHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/completionDateHeader" />
+
+            <EditText
+                android:id="@+id/editTextCompletionDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/completion_date_hint" />
+
+            <!-- Maintenance Fee Field -->
+            <TextView
+                android:id="@+id/maintenanceFeeTitle"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current Maintenance Fee"
+                android:textColor="@color/design_default_color_error" />
+
+            <TextView
+                android:id="@+id/maintenanceFee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3sp"
+                android:layout_marginBottom="7sp"
+                android:text="TextView"
+                android:textSize="17sp"
+                android:textColor="@color/design_default_color_error" />
+
+            <TextView
+                android:id="@+id/maintenanceFeeHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/maintenanceFeeHeader" />
+
+            <EditText
+                android:id="@+id/editTextMaintenanceFee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/maintenance_fee_hint"
+                android:inputType="numberDecimal" />
+
+            <!-- Package Field -->
+            <TextView
+                android:id="@+id/packageTitle"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current Package"
+                android:textColor="@color/design_default_color_error" />
+
+            <TextView
+                android:id="@+id/packages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3sp"
+                android:layout_marginBottom="7sp"
+                android:text="TextView"
+                android:textSize="17sp"
+                android:textColor="@color/design_default_color_error" />
+
+            <TextView
+                android:id="@+id/packageHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/packageHeader" />
+
+            <EditText
+                android:id="@+id/editTextPackage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/package_hint"
+                android:minLines="4"
+                android:maxLines="6" />
+
+            <TextView
+                android:id="@+id/imageBar"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentStart="true"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="Update Image"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/videoBar"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentStart="true"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="Update Video"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/main_blue"
+                android:backgroundTint="@color/main_blue"
+                android:text="Edit"
+                app:cornerRadius="8dp" />
+
+            <!-- Panel Bank Multi Selection Dropdown -->
+            <!-- Note: Custom implementation required for multi-selection -->
+
+            <!-- Facilities Multi Selection Dropdown -->
+            <!-- Note: Custom implementation required for multi-selection -->
+
+            <!-- Additional fields can be added here -->
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

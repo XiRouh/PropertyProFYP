@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/main_blue"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:navigationIcon="@drawable/arrow_left"
+        app:navigationIconTint="@null"
+        app:title="DSR Calculator"
+        app:titleTextColor="@android:color/black" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <!-- Net Income Field -->
+            <TextView
+                android:id="@+id/netIncomeHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/netIncome" />
+
+            <EditText
+                android:id="@+id/editTextNetIncome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Monthly Net Income (RM)"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/monthlyExpensesHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Monthly Expenses"
+                android:textColor="@color/darkblue"
+                android:textSize="25sp" />
+
+            <!-- Home Financing Field -->
+            <TextView
+                android:id="@+id/homeFinancingHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/homeFinancing" />
+
+            <EditText
+                android:id="@+id/editTexthomeFinancing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/homeFinancing"
+                android:inputType="numberDecimal" />
+
+            <!-- Car Financing Field -->
+            <TextView
+                android:id="@+id/carFinancingHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/carFinancing" />
+
+            <EditText
+                android:id="@+id/editTextcarFinancing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/carFinancing"
+                android:inputType="numberDecimal" />
+
+            <!-- Credit Card Field -->
+            <TextView
+                android:id="@+id/creditCardHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/creditCard" />
+
+            <EditText
+                android:id="@+id/creditCardPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/creditCard"
+                android:inputType="numberDecimal" />
+
+            <!-- Personal Financing Field -->
+            <TextView
+                android:id="@+id/personalFinancingHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/personalFinancing" />
+
+            <EditText
+                android:id="@+id/editTextpersonalFinancing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/personalFinancing"
+                android:inputType="numberDecimal" />
+
+            <!-- Education Loan Field -->
+            <TextView
+                android:id="@+id/educationLoanHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/educationLoan" />
+
+            <EditText
+                android:id="@+id/editTextEducationLoan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/educationLoan"
+                android:inputType="numberDecimal" />
+
+            <!-- Other Loan Field -->
+            <TextView
+                android:id="@+id/otherLoanHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/otherLoan" />
+
+            <EditText
+                android:id="@+id/editTextOtherLoan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/otherLoan"
+                android:inputType="numberDecimal" />
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/darkblue"
+                android:text="Calculate"
+                app:cornerRadius="8dp" />
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

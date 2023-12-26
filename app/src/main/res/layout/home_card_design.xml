@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/propertyImg"
+            android:layout_width="130dp"
+            android:layout_height="160dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/homeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/projectNameTitle"
+                android:text="Project Name"
+                style="@style/homeTitle" />
+
+            <TextView
+                android:id="@+id/projectName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3sp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/propertyTypeTitle"
+                style="@style/homeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Property Type" />
+
+            <TextView
+                android:id="@+id/propertyType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3sp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/priceTitle"
+                style="@style/homeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3sp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/areaTitle"
+                style="@style/homeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Area" />
+
+            <TextView
+                android:id="@+id/area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3sp"
+                android:text="TextView" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

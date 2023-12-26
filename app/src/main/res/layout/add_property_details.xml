@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/main_blue"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:navigationIcon="@drawable/arrow_left"
+        app:navigationIconTint="@null"
+        app:title="Add Property"
+        app:titleTextColor="@android:color/black" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomNavigationView"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <!-- Property Type Dropdown -->
+            <TextView
+                android:id="@+id/propertyTypeHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/propertyTypeHeader" />
+
+            <Spinner
+                android:id="@+id/spinnerPropertyType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/propertyType"
+                android:padding="12dp"
+                android:prompt="@string/property_type_prompt" />
+
+            <!-- Tenure Dropdown -->
+            <TextView
+                android:id="@+id/tenureHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tenureHeader" />
+
+            <Spinner
+                android:id="@+id/spinnerTenure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/tenureType"
+                android:padding="12dp"
+                android:prompt="@string/tenure_prompt" />
+
+            <!-- Area Dropdown -->
+            <TextView
+                android:id="@+id/areaHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Area" />
+
+            <Spinner
+                android:id="@+id/spinnerArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/areaType"
+                android:padding="12dp" />
+
+            <!-- Location Field -->
+            <TextView
+                android:id="@+id/locationHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/locationHeader" />
+
+            <EditText
+                android:id="@+id/editTextLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:hint="@string/location_hint" />
+
+            <!-- Build UP Field -->
+            <TextView
+                android:id="@+id/buildUpHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/buildUpHeader" />
+
+            <EditText
+                android:id="@+id/editTextBuildUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/build_up_hint"
+                android:inputType="numberDecimal" />
+
+            <!-- Price Field -->
+            <TextView
+                android:id="@+id/priceHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/priceHeader" />
+
+            <EditText
+                android:id="@+id/editTextPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/price_hint"
+                android:inputType="numberDecimal" />
+
+            <!-- Description Field -->
+            <TextView
+                android:id="@+id/descriptionHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/descriptionHeader" />
+
+            <EditText
+                android:id="@+id/editTextDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/description_hint"
+                android:inputType="textMultiLine"
+                android:maxLines="6"
+                android:minLines="4" />
+
+            <!-- Project Name Field -->
+            <TextView
+                android:id="@+id/projectNameHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/projectNameHeader" />
+
+            <EditText
+                android:id="@+id/editTextProjectName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/project_name_hint" />
+
+            <!-- Developer Field -->
+            <TextView
+                android:id="@+id/developerHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/developerHeader" />
+
+            <EditText
+                android:id="@+id/editTextDeveloper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/developer_hint" />
+
+            <!-- Completion Date Field -->
+            <TextView
+                android:id="@+id/completionDateHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/completionDateHeader" />
+
+            <EditText
+                android:id="@+id/editTextCompletionDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/completion_date_hint" />
+
+            <!-- Maintenance Fee Field -->
+            <TextView
+                android:id="@+id/maintenanceFeeHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/maintenanceFeeHeader" />
+
+            <EditText
+                android:id="@+id/editTextMaintenanceFee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/maintenance_fee_hint"
+                android:inputType="numberDecimal" />
+
+            <!-- Package Field -->
+            <TextView
+                android:id="@+id/packageHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/packageHeader" />
+
+            <EditText
+                android:id="@+id/editTextPackage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/package_hint"
+                android:maxLines="6"
+                android:minLines="4" />
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/main_blue"
+                android:backgroundTint="@color/main_blue"
+                android:text="Next"
+                app:cornerRadius="8dp" />
+
+            <!-- Panel Bank Multi Selection Dropdown -->
+            <!-- Note: Custom implementation required for multi-selection -->
+
+            <!-- Facilities Multi Selection Dropdown -->
+            <!-- Note: Custom implementation required for multi-selection -->
+
+            <!-- Additional fields can be added here -->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav" />
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/main_blue"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:navigationIcon="@drawable/arrow_left"
+        app:navigationIconTint="@null"
+        app:title="Update Permission"
+        app:titleTextColor="@android:color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/checkbox_add_new_property"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Property" />
+
+    <CheckBox
+        android:id="@+id/checkbox_update_property_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Property Details" />
+
+    <CheckBox
+        android:id="@+id/checkbox_remove_property"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remove Property" />
+
+    <CheckBox
+        android:id="@+id/checkbox_send_announcement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Announcement" />
+
+    <CheckBox
+        android:id="@+id/checkbox_view_client_wishlist_report"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Client Wishlist Report" />
+
+    <CheckBox
+        android:id="@+id/checkbox_update_staff_permission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Staff Permission" />
+
+    <CheckBox
+        android:id="@+id/checkbox_delete_staff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Staff" />
+
+    <Button
+        android:id="@+id/button_update_permissions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Permissions"
+        android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</RelativeLayout>

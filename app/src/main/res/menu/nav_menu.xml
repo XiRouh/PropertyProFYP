@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/nav_create_donation"
+        android:icon="@drawable/food_donation"
+        android:title="Create Donation"/>
+
+    <item
+        android:id="@+id/nav_donation_history"
+        android:icon="@drawable/history"
+        android:title="Donation History"/>
+
+    <item android:title="Profile">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/profile"
+                android:title="Profile"/>
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="Logout"/>
+
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_rate"
+        android:icon="@drawable/rating"
+        android:title="Rating"/>
+
+
+</menu>

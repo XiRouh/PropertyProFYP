@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/main_blue"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:navigationIcon="@drawable/arrow_left"
+        app:navigationIconTint="@null"
+        app:title="Make Appointment"
+        app:titleTextColor="@android:color/black" />
+
+    <LinearLayout
+        android:id="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbar" >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:id="@+id/homeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/projectHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Project:" />
+
+            <TextView
+                android:id="@+id/bookingProject"
+                style="@style/reviewCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Project:  " />
+
+            <TextView
+                android:id="@+id/addressHeader"
+                style="@style/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address" />
+
+            <TextView
+                android:id="@+id/bookingAddress"
+                style="@style/reviewCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address: " />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+        <View
+            android:id="@+id/divider14"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/dateHeader"
+            style="@style/questionHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:text="Select Date" />
+
+        <EditText
+            android:id="@+id/dateSelect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:hint="Select Date"
+            android:cursorVisible="false"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/staffHeader"
+            style="@style/questionHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Select Staff" />
+
+        <Spinner
+            android:id="@+id/spinnerStaff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"/>
+
+        <TextView
+            android:id="@+id/timeHeader"
+            style="@style/questionHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Select Time" />
+
+        <Spinner
+            android:id="@+id/timeSelect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"/>
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Submit" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

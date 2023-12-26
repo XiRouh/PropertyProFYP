@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="@color/white"
+    android:hapticFeedbackEnabled="false"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_blue"
+        app:navigationIcon="@drawable/arrow_back_icon"
+        app:title="Profile">
+
+        <ImageView
+            android:id="@+id/toolbarNotificationIcon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/bell"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Right Icon"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+    </ScrollView>
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="85dp"
+        android:background="@drawable/circle_mask"
+        android:contentDescription="Profile Picture"
+        android:scaleType="centerInside"
+        android:src="@drawable/default_profile_image" />
+
+    <ImageView
+        android:id="@+id/editProfileImageBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="215dp"
+        android:clickable="true"
+        android:contentDescription="Edit Profile"
+        android:src="@drawable/ic_pencil"
+        app:tint="@color/black" />
+
+
+    <TextView
+        android:id="@+id/nameProfileTextView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="225dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="332dp"
+        android:layout_height="210dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/rounded_background"
+        android:paddingTop="20dp"
+        android:paddingBottom="30dp"></RelativeLayout>
+
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="265dp"
+        android:layout_marginRight="70dp"
+        android:scrollbarSize="5dp"
+        android:text="@string/emailTextView"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        tools:ignore="VisualLintButtonSize" />
+
+    <EditText
+        android:id="@+id/emailProfileTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="290dp"
+        android:layout_marginRight="70dp"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:background="@null" />
+
+    <ImageView
+        android:id="@+id/editEmailBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/emailProfileTextView"
+        android:layout_marginTop="290dp"
+        android:clickable="true"
+        android:contentDescription="Edit Email"
+        android:src="@drawable/ic_pencil"
+        app:tint="@color/black" />
+
+    <TextView
+        android:id="@+id/usernameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="325dp"
+        android:layout_marginRight="70dp"
+        android:scrollbarSize="5dp"
+        android:text="@string/usernameTextView"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        tools:ignore="VisualLintButtonSize" />
+
+    <EditText
+        android:id="@+id/nameProfileTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginRight="70dp"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:background="@null" />
+
+    <ImageView
+        android:id="@+id/editNameBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/nameProfileTextView"
+        android:layout_marginTop="350dp"
+        android:clickable="true"
+        android:contentDescription="Edit Name"
+        android:src="@drawable/ic_pencil"
+        app:tint="@color/black" />
+
+    <TextView
+        android:id="@+id/passwordTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="385dp"
+        android:layout_marginRight="70dp"
+        android:scrollbarSize="5dp"
+        android:text="PASSWORD"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        tools:ignore="VisualLintButtonSize" />
+
+    <EditText
+        android:id="@+id/passwordProfileTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="410dp"
+        android:layout_marginRight="70dp"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:background="@null" />
+
+    <ImageView
+        android:id="@+id/editPasswordBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/nameProfileTextView"
+        android:layout_marginTop="410dp"
+        android:clickable="true"
+        android:contentDescription="Edit Password"
+        android:src="@drawable/ic_pencil"
+        app:tint="@color/black" />
+
+    <Button
+        android:id="@+id/deleteProfileBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="460dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#F5F7F9"
+        android:text="@string/deleteProfileBt"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:cornerRadius="12sp"
+        app:icon="@drawable/delete_icon"
+        app:iconSize="25dp"
+        app:iconTint="@android:color/background_dark"
+        tools:ignore="VisualLintButtonSize,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/searchBotBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="520dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#F5F7F9"
+        android:text="SearchBot"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:cornerRadius="12sp"
+        app:icon="@drawable/robot"
+        app:iconSize="25dp"
+        app:iconTint="@android:color/background_dark"
+        tools:ignore="VisualLintButtonSize,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="580dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#F5F7F9"
+        android:text="@string/logoutBtn"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:cornerRadius="12sp"
+        app:icon="@drawable/ic_logout_image"
+        app:iconSize="25dp"
+        app:iconTint="@android:color/holo_red_dark"
+        tools:ignore="VisualLintButtonSize,TextContrastCheck" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav" />
+</RelativeLayout>

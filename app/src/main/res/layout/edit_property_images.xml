@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="667dp"
+        android:background="@color/main_blue"
+        app:navigationIcon="@drawable/arrow_back_icon"
+        app:title="Property Images">
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <!-- Cover Image View -->
+    <ImageView
+        android:id="@+id/coverImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="70dp"/>
+
+    <!-- Delete Icon for Cover Image -->
+    <ImageView
+        android:id="@+id/deleteCoverIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/ic_delete" />
+
+    <LinearLayout
+        android:id="@+id/updateButtonLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/coverImageView"
+        android:gravity="center_horizontal">
+
+        <!-- Button for Updating Cover Image -->
+        <Button
+            android:id="@+id/updateCoverImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:backgroundTint="@color/darkblue"
+            android:text="Update Cover Image"/>
+    </LinearLayout>
+
+
+    <!-- RecyclerView for Property Images -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/imagesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/updateButtonLinear"/>
+
+    <LinearLayout
+        android:id="@+id/addButtonLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/imagesRecyclerView"
+        android:gravity="center_horizontal">
+
+        <!-- Button for Adding Property Images -->
+        <Button
+            android:id="@+id/addImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:backgroundTint="@color/darkblue"
+            android:text="Add Property Image"/>
+    </LinearLayout>
+</RelativeLayout>

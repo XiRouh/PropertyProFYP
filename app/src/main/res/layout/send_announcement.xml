@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/main_blue"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:navigationIcon="@drawable/arrow_left"
+        app:navigationIconTint="@null"
+        app:title="Send Announcement"
+        app:titleTextColor="@android:color/black" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbar" >
+
+        <TextView
+            android:id="@+id/titleHeader"
+            style="@style/questionHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Enter Title" />
+
+        <EditText
+            android:id="@+id/titleField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Enter Title" />
+
+        <TextView
+            android:id="@+id/messageHeader"
+            style="@style/questionHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Enter Message" />
+
+        <EditText
+            android:id="@+id/messageField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Message"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="5dp"
+            android:minLines="4"
+            android:maxLines="8" />
+
+        <TextView
+            android:id="@+id/recipientHeader"
+            style="@style/questionHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Select Recipient" />
+
+        <Spinner
+            android:id="@+id/spinnerRecipientType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/userType"
+            android:layout_marginBottom="5dp"
+            android:padding="12dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:backgroundTint="@color/darkblue"
+        android:layout_below="@id/LinearLayout"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginRight="140dp"
+        android:text="Submit" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav"
+        app:labelVisibilityMode="labeled"/>
+
+
+</RelativeLayout>

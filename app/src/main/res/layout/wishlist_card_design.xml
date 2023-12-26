@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/homeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/wishlistId"
+                style="@style/reviewCardView"
+                android:text="Wishlist ID" />
+
+            <TextView
+                android:id="@+id/userId"
+                style="@style/reviewCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UserID:  " />
+
+            <TextView
+                android:id="@+id/userName"
+                style="@style/reviewCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username:  " />
+
+            <TextView
+                android:id="@+id/projectId"
+                style="@style/reviewCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ProjectID:" />
+
+            <TextView
+                android:id="@+id/projectName"
+                style="@style/reviewCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Project Name:" />
+
+            <TextView
+                android:id="@+id/area"
+                style="@style/reviewCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Area" />
+
+            <TextView
+                android:id="@+id/propertyType"
+                style="@style/reviewCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PropertyType" />
+
+            <TextView
+                android:id="@+id/tunureType"
+                style="@style/reviewCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tenure Type" />
+
+            <Button
+                android:id="@+id/viewBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View Project" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
